@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AnyConnectProfile xmlns="http://schemas.xmlsoap.org/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.xmlsoap.org/encoding/ AnyConnectProfile.xsd">
+	<ClientInitialization>
+		<CertificatePinning>false</CertificatePinning>
+		<UseStartBeforeLogon UserControllable="true">false</UseStartBeforeLogon>
+		<WindowsLogonEnforcement>SingleLocalLogon</WindowsLogonEnforcement>
+		<WindowsVPNEstablishment>LocalUsersOnly</WindowsVPNEstablishment>
+		<LinuxLogonEnforcement>SingleLocalLogon</LinuxLogonEnforcement>
+		<LinuxVPNEstablishment>LocalUsersOnly</LinuxVPNEstablishment>
+		<CertificateStore>All</CertificateStore>
+		<CertificateStoreMac>All</CertificateStoreMac>
+		<CertificateStoreLinux>All</CertificateStoreLinux>
+		<CertificateStoreOverride>false</CertificateStoreOverride>
+		<LocalLanAccess UserControllable="false">false</LocalLanAccess>
+		<AutoReconnect UserControllable="true">true
+			<AutoReconnectBehavior UserControllable="false">ReconnectAfterResume</AutoReconnectBehavior>
+		</AutoReconnect>
+		<MinimizeOnConnect UserControllable="true">true</MinimizeOnConnect>
+		<SuspendOnConnectedStandby>false</SuspendOnConnectedStandby>
+		<ClearSmartcardPin UserControllable="false">true</ClearSmartcardPin>
+		<IPProtocolSupport>IPv4</IPProtocolSupport>
+		<AutomaticCertSelection UserControllable="false">true</AutomaticCertSelection>
+		<AllowLocalProxyConnections>true</AllowLocalProxyConnections>
+		<EnableAutomaticServerSelection UserControllable="true">true</EnableAutomaticServerSelection>
+		<ProxySettings>Native</ProxySettings>
+		<AutomaticVPNPolicy>false</AutomaticVPNPolicy>
+		<CaptivePortalRemediationBrowserFailover>false</CaptivePortalRemediationBrowserFailover>
+		<AuthenticationTimeout>30</AuthenticationTimeout>
+		<AllowManualHostInput>true</AllowManualHostInput>
+	</ClientInitialization>
+	<ServerList>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - Auto Select Nearest Location</HostName>
+			<HostAddress>2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - US Virgina East </HostName>
+			<HostAddress>us-east-1-2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - India West DC</HostName>
+			<HostAddress>ap-south-1-2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - MEA DC</HostName>
+			<HostAddress>me-central-1-2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - AUS DC</HostName>
+			<HostAddress>ap-southeast-2-2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - Brazil DC</HostName>
+			<HostAddress>sa-east-1-2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - US Pacific</HostName>
+			<HostAddress>us-west-2-2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - UK DC</HostName>
+			<HostAddress>eu-west-2-2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - India South</HostName>
+			<HostAddress>ap-south-2-2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - US Midwest</HostName>
+			<HostAddress>us-east-2-2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - US Canada</HostName>
+			<HostAddress>ca-central-1-2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - Africa DC</HostName>
+			<HostAddress>af-south-1-2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - Germany DC</HostName>
+			<HostAddress>eu-central-1-2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - Singapore</HostName>
+			<HostAddress>ap-southeast-1-2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - Hong Kong</HostName>
+			<HostAddress>ap-east-1-2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - Tokyo</HostName>
+			<HostAddress>ap-northeast-1-2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - Zurich</HostName>
+			<HostAddress>eu-central-2-2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - Stockholm</HostName>
+			<HostAddress>eu-north-1-2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - Jakarta</HostName>
+			<HostAddress>ap-southeast-3-2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - Israel</HostName>
+			<HostAddress>il-central-1-2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+		<HostEntry>
+			<HostName>Corporate_VPN - TLS - Osaka</HostName>
+			<HostAddress>ap-northeast-3-2a54.vpn.sse.cisco.com</HostAddress>
+			<UserGroup>Corporate_VPN</UserGroup>
+			<LoadBalancingServerList>
+				<HostAddress>*-2a54.vpn.sse.cisco.com</HostAddress>
+			</LoadBalancingServerList>
+		</HostEntry>
+	</ServerList>
+</AnyConnectProfile>
